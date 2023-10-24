@@ -44,16 +44,16 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   max-width: 320px;
   margin: 0 auto;
+  padding: 16px;
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
 .header-button {
-  margin-right: auto;
+  margin-right: 0 auto;
   border: none;
   background-color: transparent;
-  margin-left: 16px;
 }
 .hero-btn-ico {
   background: #fff;
@@ -94,10 +94,7 @@ img {
   display: block;
 }
 
-.nav-item:hover {
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.nav-item:hover,
 .nav-item:focus {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -134,14 +131,12 @@ img {
   padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-link:hover {
-  color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.adress-link:hover,
 .adress-link:focus {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .adress-list {
   display: flex;
   gap: 40px;
@@ -151,7 +146,10 @@ img {
   width: 320px;
   height: 640px;
   background-color: #fff;
-  border: 1px solid red;
+  padding: 24px 24px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mob-close-ico {
@@ -168,56 +166,86 @@ img {
   width: 24px;
   height: 24px;
   padding: 0;
+  margin-left: auto;
+  margin-bottom: 24px;
   border-radius: 50%;
   border: 1px rgba(0, 0, 0, 0.1) solid;
   top: 24px;
   right: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 
-.mob-button:hover {
-  background-color: #404bbf;
-  border: none;
-}
+.mob-button:hover,
 .mob-button:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.mob-menu-list {
-  max-width: 151px;
-  max-height: 200px;
-  margin-bottom: 168px;
-  display: flex;
-  flex-direction: column;
-  column-gap: 40px;
-}
 .mob-main {
+  display: block;
+  margin-left: auto;
 }
 
 .mob-item-active {
 }
 .mob-item {
+  color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   text-transform: capitalize;
-  color: #2e2f42;
+  margin-bottom: 40px;
 }
 
-.mob-studio {
+.mob-item:hover,
+.mob-item:focus {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-contacts {
+
+.mob-item-active:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-adress-list {
+  margin-top: auto;
   margin-bottom: 48px;
 }
-.mob-adress-list {
+
+.mob-adress-link:hover,
+.mob-adress-link:focus {
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-adress-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .mob-adress-link {
+  color: #434455;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
 }
+.mob-adress-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .mob-soc-icons {
+  padding-right: 24px;
+  padding-left: 16px;
+  margin: bottom 0;
+}
+.mob-soc-icons-list {
+  margin-bottom: 0 auto;
+  display: flex;
+  gap: 40px;
 }
 
 /*     <!-- Main Content --> */
@@ -271,9 +299,7 @@ img {
   margin-top: 72px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover {
-  background-color: #404bbf;
-}
+.button:hover,
 .button:focus {
   background-color: #404bbf;
 }
@@ -686,15 +712,12 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
-  opacity: 1;
+  opacity: 2;
   visibility: visible;
   pointer-events: auto;
 }
@@ -1028,12 +1051,13 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1158px;
+
+    padding: 0 15px;
   }
   .advantages {
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .advantages-icons {
   }
@@ -1081,7 +1105,7 @@ img {
   }
   .solutions {
     padding: 188px 0;
-    min-width: 1440px;
+    min-width: 1158px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
