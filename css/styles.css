@@ -1028,6 +1028,17 @@ img {
       ),
       url(../images/tablet.hero.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet.hero-2x.jpg);
+    }
+  }
   .button {
     margin-bottom: 128px;
   }
@@ -1133,6 +1144,17 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/background-photo-min.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dasktop-2x.jpg);
+    }
   }
   .button {
     margin-bottom: 188px 472px 48px 472px;
