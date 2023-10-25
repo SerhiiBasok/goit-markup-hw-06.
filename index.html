@@ -380,14 +380,32 @@
             <li class="portfolio-list-element">
               <div class="box-portfolio">
                 <picture>
-                  <source srcset="" />
+                  <source
+                    srcset="./images/pc1-1x-min.jpeg 1x, pc1-2x-min.jpeg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tab1-1x-min.jpeg 1x,
+                      images/tab1-2x-min.jpeg   2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mob1-1x-min.jpeg 1x,
+                      images/mob1-2x-min.jpeg   2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="portfolio-image"
+                    src="./images/BankingApp.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
                 </picture>
-                <img
-                  class="portfolio-image"
-                  src="./images/BankingApp.jpg"
-                  alt="Banking App"
-                  width="360"
-                />
+
                 <p class="portfolio-slide">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
