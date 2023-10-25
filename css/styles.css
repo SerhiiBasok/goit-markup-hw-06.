@@ -46,14 +46,15 @@ img {
   margin: 0 auto;
   padding: 16px;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
 }
 .header-button {
-  margin-right: 0 auto;
   border: none;
   background-color: transparent;
+  float: right;
 }
 .hero-btn-ico {
   background: #fff;
@@ -69,7 +70,6 @@ img {
   text-transform: uppercase;
 }
 .header-logo {
-  margin-right: 76px;
   padding: 24px 0;
 }
 .logo-part {
@@ -265,6 +265,18 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 72px 16px 200px 16px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/phone.hero-2x.jpg);
+  }
 }
 
 .header-content {
@@ -980,6 +992,7 @@ img {
   .footer-form-block {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .footer-p {
     display: flex;
@@ -987,6 +1000,9 @@ img {
   }
   .footer-logo {
     flex-direction: row;
+  }
+  .form-name {
+    margin-right: auto;
   }
   .footer-form {
     display: flex;
@@ -1027,10 +1043,16 @@ img {
   .adress {
     display: flex;
   }
+
+  .header-container {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
   .header-main {
     display: flex;
     gap: 40px;
-    margin-right: 121px;
+    justify-content: space-between;
   }
 
   .adress-list {
