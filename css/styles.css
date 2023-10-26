@@ -71,6 +71,7 @@ img {
 }
 .header-logo {
   padding: 24px 0;
+  margin-right: 76px;
 }
 .logo-part {
   color: #2e2f42;
@@ -1145,7 +1146,7 @@ img {
       ),
       url(../images/background-photo-min.jpg);
   }
-  @media (min-device-pixel-ratio: 2),
+  /* @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .solutions {
@@ -1155,7 +1156,7 @@ img {
         ),
         url(../images/dasktop-2x.jpg);
     }
-  }
+  } */
   .button {
     margin-bottom: 188px 472px 48px 472px;
   }
@@ -1184,5 +1185,44 @@ img {
     display: flex;
     flex-direction: row;
     gap: 40px;
+  }
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
+
+  .footer-content {
+    max-width: 264px;
+  }
+
+  .footer-social-container {
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .footer-container-only {
+    margin-right: 120px;
+  }
+
+  .footer-form-block {
+    margin-left: auto;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+    margin-right: 0;
+  }
+
+  .footer-label {
+    display: flex;
+    gap: 24px;
   }
 }
