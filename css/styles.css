@@ -151,6 +151,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mob-close-ico {
@@ -730,7 +733,7 @@ img {
 }
 
 .is-open {
-  opacity: 2;
+  opacity: 5;
   visibility: visible;
   pointer-events: auto;
 }
