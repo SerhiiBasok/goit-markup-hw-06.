@@ -69,7 +69,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 .header-logo {
   padding: 24px 0;
@@ -387,6 +386,8 @@ img {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 8px;
 }
 .advantages-content {
   color: #434455;
@@ -494,7 +495,7 @@ img {
 
 .portfolio {
   padding-top: 96px;
-  padding-bottom: 96 px;
+  padding-bottom: 96px;
 }
 
 .portfolio-title {
@@ -609,7 +610,6 @@ img {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  flex-direction: column;
 }
 .footer-soc-icons-list {
   display: flex;
@@ -968,6 +968,9 @@ img {
 /* TABLET */
 
 @media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 76px;
+  }
   .adress-link {
     color: #434455;
     font-size: 12px;
@@ -996,13 +999,13 @@ img {
 
   .personal-list-element {
     width: calc((100% - 24px) / 2);
-    margin-bottom: 72px;
     max-width: 264px;
   }
   .personal-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 64px;
   }
   .personal-img {
     margin: 0 auto;
@@ -1016,6 +1019,12 @@ img {
   .portfolio-image {
     margin: 0 auto;
   }
+
+  element.style {
+  }
+  .portfolio-content {
+    row-gap: 64px;
+  }
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -1024,20 +1033,23 @@ img {
   .footer-container {
     display: flex;
     text-align: left;
-    min-width: 584px;
+    max-width: 584px;
+    align-items: baseline;
   }
   .footer-content {
     color: #f4f4fd;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    max-width: 288px;
-    display: flex;
-    justify-content: center;
+    max-width: 264px;
   }
   .footer-container-only {
     margin-bottom: 0;
   }
+  .footer-soc-icons-list {
+    margin-bottom: 0;
+  }
+
   .footer-form-block {
     display: flex;
     align-items: center;
@@ -1282,6 +1294,16 @@ img {
     font-style: normal;
     margin-left: auto;
   }
+  .adress-link {
+    color: #434455;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   .header-main {
     display: flex;
     gap: 40px;
@@ -1327,6 +1349,7 @@ img {
 
   .footer-form-block {
     margin-left: auto;
+    margin-bottom: 0;
   }
   .footer-social-container {
   }
@@ -1340,5 +1363,12 @@ img {
   .footer-label {
     display: flex;
     gap: 24px;
+  }
+
+  .tablet-box {
+    margin-bottom: 0;
+  }
+  .footer-soc-icons-list {
+    margin-bottom: 0;
   }
 }
