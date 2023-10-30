@@ -1061,6 +1061,7 @@ img {
   }
   .footer-logo {
     flex-direction: row;
+    margin-left: 0;
   }
   .footer-input {
     width: 264px;
@@ -1340,6 +1341,7 @@ img {
   .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+    margin-left: 0;
   }
 
   .footer-container-only {
